@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a68266f061.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Welcome To Shopping Cart</h2>
+
+
+    <h3>Select Brand</h3>
+    <!-- Filter Inputs -->
+    <div class="filter-container">
+        <div class="checkbox-select">
+            <div>
+                <label><input type="checkbox" id="brand" name="brand" value="all" checked> ALL</label>
+            </div>
+        <div>
+            <label><input type="checkbox" id="brand1" name="brand" value="Adidas"> Adidas</label>
+        </div>
+        <div>
+            <label><input type="checkbox" id="brand2" name="brand" value="Nike"> Nike</label>
+        </div>
+        <div>
+            <label><input type="checkbox" id="brand3" name="brand" value="Puma"> Puma</label>
+        </div>
+        <div>
+            <label><input type="checkbox" id="brand4" name="brand" value="Converse"> Converse</label>
+        </div>
+        <div>
+            <label><input type="checkbox" id="brand5" name="brand" value="Reebok"> Reebok</label>
+        </div>
+        <div>
+            <label><input type="checkbox" id="brand6" name="brand" value="Khadims"> Khadims</label>
+        </div>
+    </div>
+        <label for="max-price">Max Price:</label>
+        <input type="number" id="max-price" placeholder="Enter max price">
+        
+        <button id="filter-btn">Filter</button>
+  
+    </div>
+
+    <div class="warning_text"> Sorry We Could Not find Your Product </div>
+    <!-- Product Display Area -->
+    <div class="product-container" id="product-list">
+        <!-- Products will be displayed here -->
+        <div class="product-card">
+            <img src="https://img.freepik.com/free-vector/color-sport-sneaker_98292-3191.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Adidas</div>
+            <div class="product-price">$160</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/orange-shoe-icons-vector-illustrations_835895-8360.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Nike</div>
+            <div class="product-price">$210</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/free-vector/blue-tennis-shoes-sport-icon_18591-82518.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Puma</div>
+            <div class="product-price">$90</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/shoes-vans-old-skool-shoe-vector-image-illustration_776624-56.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Converse</div>
+            <div class="product-price">$120</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/baby-shoes_135595-91003.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Reebok</div>
+            <div class="product-price">$75</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/brown-shoe-with-brown-sole-blue-stripe_272293-2521.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Khadims</div>
+            <div class="product-price">$34</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/free-vector/color-sport-sneaker_98292-3191.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Adidas</div>
+            <div class="product-price">$130</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/orange-shoe-icons-vector-illustrations_835895-8360.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Nike</div>
+            <div class="product-price">$110</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/free-vector/blue-tennis-shoes-sport-icon_18591-82518.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Puma</div>
+            <div class="product-price">$180</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/shoes-vans-old-skool-shoe-vector-image-illustration_776624-56.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Converse</div>
+            <div class="product-price">$100</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/baby-shoes_135595-91003.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Reebok</div>
+            <div class="product-price">$105</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/brown-shoe-with-brown-sole-blue-stripe_272293-2521.jpg?uid=R153296725&ga=GA1.1.1729034354.1721123793&semt=ais_hybrid" alt="Product Image">
+            <div class="product-name">Khadims</div>
+            <div class="product-price">$24</div>
+            <button id="wishlist-btn">
+                <i class="wishlist-icon fa fa-heart"></i> Add to Wishlist
+            </button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
